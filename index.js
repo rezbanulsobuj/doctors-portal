@@ -143,6 +143,9 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('Hello From doctors-portal')
 })
+app.get('/hero', (req, res) => {
+    res.send('hero from hero ku')
+})
 
 app.listen(port, () => {
     console.log(`doctors-portal app listening ${port}`)
